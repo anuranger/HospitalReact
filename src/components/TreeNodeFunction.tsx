@@ -53,6 +53,9 @@ const TreeNodeFunction: React.FC<TreeNodeProps> = ({node}) => {
 
   useEffect(() => {
     setInputName(node.name);
+    if(node.index == "0")  {
+      toggle(true);
+    }
     document.addEventListener('click', closeBox);
     return () => document.removeEventListener('click', closeBox);
     
