@@ -1,0 +1,8 @@
+.treeContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    div:firstChild {
+        width: 65%;
+    }
+}

@@ -1,0 +1,38 @@
+.floaterClass {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1000;
+    min-width: 150px;
+    min-height: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  
+  
+
+    &.active {
+        visibility: visible;
+        transform: scale(1);
+    }
+
+  .dropdown-ul {
+    padding: 0px !important;
+    margin: 8px 12px;
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+
+  .inlineOptions {
+    display: flex;
+    gap: 5px;
+  }
+}
+  

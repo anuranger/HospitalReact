@@ -1,0 +1,105 @@
+.myTree {
+  
+  span {
+    cursor: pointer;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .treenode {
+    list-style-type: none !important;
+    margin-left: 20px;
+
+  }
+  .open {
+    border-left: 2px  dashed rgba(0, 0, 0, 0.4);
+  }
+  
+  .box {
+    display: grid;
+    grid-template-columns: repeat(4, 25px 20px fit-content(100%) 0.5fr);
+    width: fit-content;
+    position: relative;
+
+    span {
+      cursor: pointer;
+      font-weight: normal;
+      padding-left: 10px;
+    }
+
+    ul {
+      list-style-type: none !important;
+      padding-inline-start: 0px !important;
+    }
+
+    .floaterClass {
+      position: absolute;
+      top: 20px;
+      width: max-content;
+    }
+  }
+
+  .listElement {
+    padding: 10px 0px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: -42px;
+      width: 50px;
+      height: 2px;
+      border-bottom: 2px dashed rgba(0, 0, 0, 0.4)
+    }
+  }
+
+  .verticalEllipsis {
+    padding-left: 10px;
+  }
+
+  .inputDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .inputButton {
+    display: flex;
+  }
+
+  .input {
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    padding:6px;
+    padding-left: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+    outline: none;
+    color:#5e5e61;
+    &:focus {
+      border: 2px solid rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .error {
+    color: rgb(204, 21, 21);
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .buttonAdd {
+    font-size: 13px;
+    background-color: rgb(245, 247, 248);
+    padding:0px 12px;
+    outline: none;
+    border-radius: 5px;
+    &:hover {
+      border-color: #292c60;
+    }
+  }
+
+  .nodeName {
+    width: max-content;
+  }
+}
+  
